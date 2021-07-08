@@ -8,24 +8,37 @@
 </head>
 
 <body>
-    <form id="login-form" class="hidden">
-    <input 
-    required 
-    maxlength="15" type = "text" placeholder="what is your name" />
-    <button> log in </button>
+    
+    <form id="login-form">
+        <input 
+        required 
+        maxlength="15" type = "text" placeholder="what is your name" />
+        <button> log in </button>
     
     </form>
 
+    <h1 id="greeting" class="hidden"> hello</h1>
+    
     <h2 id="clock">  </h2>
-    <h1 id="greeting" class="hidden"> </h1>
     
-    <form id="todo-form">
-        <input type ="text" placeholder="write a to do and press enter" />
-
-    </form>
-    <ul id="todo-list"></ul>    
+    <section class= "todo">
+        <form id="todo-form">
+            <input type ="text" class="todo-input"
+            placeholder="what is your main focus?" />
+        </form>
+    
+        <ul id="todo-list">
+            
+        </ul> 
+    </section>
+    
     <div id="quote">
-        <span></span> <br>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="weather">
+        <span></span>
         <span></span>
     </div>
     

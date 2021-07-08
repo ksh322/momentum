@@ -11,16 +11,19 @@ function savetodos(){
 function painttodo(newtodo){
     const li = document.createElement("li");
     li.id=newtodo.id;
-    const span = document.createElement("span");
-    span.innerText = newtodo.text;
+    
     const button= document.createElement("button");
     button.innerText= "X";
+    const span = document.createElement("span");
+    span.innerText = " "+newtodo.text;
+    
     button.addEventListener("click",deletetodo)
+    li.appendChild(button); 
     li.appendChild(span);
-    li.appendChild(button);   
+    
     todolist.appendChild(li);
 }
-//for recap form has a default:submit->redirect  and you need to prevent redirection
+//for recap form has a default:submit->redirection and you need to prevent redirection
 function handletodosubmit(event) {
     event.preventDefault();
     const newtodo=todoInput.value;
